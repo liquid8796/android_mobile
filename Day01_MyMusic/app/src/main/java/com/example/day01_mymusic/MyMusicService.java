@@ -18,12 +18,16 @@ public class MyMusicService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        mp_Object = MediaPlayer.create(this, R.raw.fuck);
+        mp_Object = MediaPlayer.create(this, R.raw.sail);
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        mp_Object.start();
+        if(flags == 0){
+            mp_Object.start();
+        }else{
+            mp_Object.pause();
+        }
         return super.onStartCommand(intent, flags, startId);
     }
 
