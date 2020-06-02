@@ -1,55 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InputActivity">
+    tools:context=".Fragment2">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Input Information"
-        android:textSize="20dp"
+        android:text="Fragment 2"
         android:textStyle="bold"
+        android:textSize="20dp"
         android:gravity="center"/>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Username: "/>
-
+        android:text="Number 2:" />
     <EditText
-        android:id="@+id/edtUsername"
+        android:id="@+id/edtNumber2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:inputType="number" />
     <TextView
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Phone number: "/>
-
-    <EditText
-        android:id="@+id/edtPhoneNo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email: "/>
-
-    <EditText
-        android:id="@+id/edtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:text="Result = " />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DONE"
-        android:onClick="clickToDone"/>
+        android:text="ADD"
+        android:id="@+id/btnAdd"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub"
+        android:onClick="clickToSub"/>
+
 
 </LinearLayout>
